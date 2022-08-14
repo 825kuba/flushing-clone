@@ -1,10 +1,10 @@
 {
   "name": "flushing-clone",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Landing page clone",
   "scripts": {
-    "start": "parcel src/index.html"
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html"
   },
   "author": "",
   "license": "ISC",
