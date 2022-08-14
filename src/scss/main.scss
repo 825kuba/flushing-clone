@@ -1,0 +1,115 @@
+$yellow: #fffd01;
+$yellow-dark: #fff607c7;
+$accordion-bg: black;
+$accordion-button-active-bg: black;
+// $accordion-border-color: $yellow;
+// $accordion-border-width: 2px;
+
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+
+$my-heading-font: 'Libre Baskerville';
+
+.my-btn {
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: scale(1.075);
+  }
+}
+
+.sm-heading {
+  @media only screen and(min-width: 768px) {
+    font-size: 23px;
+  }
+}
+
+.my-heading {
+  font-family: $my-heading-font;
+  font-weight: 700;
+}
+
+.overlay {
+  z-index: -100;
+}
+
+section {
+  z-index: 100;
+}
+
+.hero {
+  background-image: url('../img/hero.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+
+  & .my-heading {
+    font-size: 56px;
+    line-height: 100%;
+
+    @media only screen and (min-width: 768px) {
+      font-size: 114px;
+    }
+  }
+}
+
+.contacts {
+  background-image: url('../img/map.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+
+  & .my-heading {
+    font-size: 41px;
+    line-height: 100%;
+
+    @media only screen and (min-width: 768px) {
+      font-size: 59px;
+    }
+    @media only screen and (min-width: 992px) {
+      font-size: 76px;
+    }
+  }
+}
+
+.logo {
+  width: 70px;
+
+  @media only screen and (min-width: 768px) {
+    width: 84px;
+  }
+}
+
+.spacer {
+  height: 20px;
+
+  @media only screen and (min-width: 768px) {
+    height: 80px;
+  }
+  @media only screen and (min-width: 992px) {
+    height: 200px;
+  }
+}
+
+.my-map {
+  filter: grayscale(1);
+  transition: filter 2s ease;
+
+  &:hover {
+    filter: grayscale(0);
+  }
+}
+
+.icon-link {
+  &:link,
+  &:visited {
+    filter: grayscale(1);
+    color: $green;
+  }
+
+  &:hover,
+  &:focus {
+    filter: grayscale(0);
+    color: $green;
+  }
+}
